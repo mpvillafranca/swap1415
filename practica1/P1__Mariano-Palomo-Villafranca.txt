@@ -1,0 +1,10 @@
+Server version: Apache/2.4.7 (Ubuntu)
+Server built:   Jul 22 2014 14:36:39
+
+root       997  0.0  3.9 102044 19972 ?        Ss   11:42   0:00 /usr/sbin/apache2 -k start
+www-data  1011  0.0  1.1 102068  5612 ?        S    11:42   0:00 /usr/sbin/apache2 -k start
+www-data  1012  0.0  1.1 102068  5612 ?        S    11:42   0:00 /usr/sbin/apache2 -k start
+www-data  1013  0.0  1.1 102068  5608 ?        S    11:42   0:00 /usr/sbin/apache2 -k start
+www-data  1014  0.0  1.1 102068  5608 ?        S    11:42   0:00 /usr/sbin/apache2 -k start
+www-data  1015  0.0  1.1 102068  5612 ?        S    11:42   0:00 /usr/sbin/apache2 -k start
+mpvilla+  1296  0.0  0.4   4704  2052 tty1     S+   11:52   0:00 grep --color=auto apache

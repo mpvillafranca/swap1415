@@ -1,0 +1,3 @@
+Tema 8: Requisitos hardware y software en servidores web
+====================
+*El Tema 8 "Requisitos hardware y software en servidores web" recoge los principales elementos para construir la red de la granja web, analizando los productos específicos de varios fabricantes, y revisa el software utilizado al montar un sistema web de altas prestaciones, tanto en cuanto a sistemas operativos como a herramientas de balanceo de carga o monitorización.*

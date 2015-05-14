@@ -28,7 +28,7 @@ Tras esto, introducimos la contraseña y procedemos a crear una base de datos (B
 
 Realizamos algunas consultas:
 
-<img src="ejercicio1.png" alt="Captura de pantalla 1"> <br/>
+<img src="Ejercicio1.png" alt="Captura de pantalla 1"> <br/>
 
 ###Ejercicio 2: Replicar una BD MySQL con `mysqldump`
 `mysqldump es parte de los programas de cliente MySQL y puede ser utilizado para generar copias de seguridad de DB.
@@ -53,7 +53,7 @@ mysql -u root -p
 <b>mysql></b> quit
 </pre>
 
-<img src="ejercicio2-1.png" alt="Captura de pantalla 2-1"> <br/>
+<img src="Ejercicio2-1.png" alt="Captura de pantalla 2-1"> <br/>
 
 Ahora vamos a la máquina esclavo (máquina 2, secundaria) y copiamos el archivo `.sql` con todos los datos salvados desde la máquina principal.
 
@@ -71,7 +71,7 @@ Y, a continuación, restauramos los datos contenidos en la BD.
 
 	mysql -u root -p contactos < /root/ejemplodb.sql
 
-<img src="ejercicio2-2.png" alt="Captura de pantalla 2-2"> <br/>
+<img src="Ejercicio2-2.png" alt="Captura de pantalla 2-2"> <br/>
 
 
 ###Ejercicio 3: Replicación de BD mediante una configuración maestro-esclavo
@@ -115,7 +115,7 @@ mysql -u root -p
 <b>mysql></b> FLUSH TABLES WITH READ LOCK;
 </pre>
 
-<img src="ejercicio3-Maestro.png" alt="Captura de pantalla 3-Maestro"> <br/>
+<img src="Ejercicio3-Maestro.png" alt="Captura de pantalla 3-Maestro"> <br/>
 	
 Y ahora en el **cliente**, a partir de la información obtenida de ejecutar en el maestro **`SHOW MASTER STATUS;`**
 
@@ -125,7 +125,7 @@ mysql -u root -p
 <b>mysql></b> START SLAVE;
 </pre>
 
-<img src="ejercicio3-Esclavo.png" alt="Captura de pantalla 3-Esclavo"> <br/>
+<img src="Ejercicio3-Esclavo.png" alt="Captura de pantalla 3-Esclavo"> <br/>
 
 Una vez hecho todo esto, podemos hacer pruebas en el maestro y deberían replicarse en el esclavo automáticamente.
 
@@ -145,8 +145,8 @@ mysql -u root -p
 
 Y como vemos, el valor de la variable "Seconds_Behind_Master" es distinto de *null*, por lo que todo está funcionando correctamente.
 
-<img src="ejercicio3-EsclavoOK.png" alt="Captura de pantalla 3-EsclavoOK"> <br/>
+<img src="Ejercicio3-EsclavoOK.png" alt="Captura de pantalla 3-EsclavoOK"> <br/>
 
 Para finalizar, introducimos algunos datos en el maestro y comprobamos como se actualizan en el esclavo.
 
-<img src="ejercicio3-Test.png" alt="Captura de pantalla 3-EsclavoOK"> <br/>
+<img src="Ejercicio3-Test.png" alt="Captura de pantalla 3-EsclavoOK"> <br/>

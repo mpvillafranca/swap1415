@@ -15,6 +15,7 @@ Además, como cuestión opcional, se plantea buscar otra herramienta para medir 
 -  Máquina 2: 192.168.10.102
 -  Máquina 3 (Balanceador): 192.168.10.103
 -  Máquina 4 (Benchmarks): 192.168.10.104 
+
 ###Ejercicio 1: Comprobar el rendimiento de servidores web con Apache Benchmark
 
 Apache Benchmark (*ab*) es una herramienta creada por Apache que nos permite comprobar el rendimiento de un servidor web, ya sea del hardware o software, o de alguna modificación que le hayamos hecho. Sin embargo, *ab* no simula con fidelidad el uso del sitio web que pueden hacer los usuarios habitualmente pues pide el mismo recurso (misma página repetidamente. Por tanto, las medidas obtenidas con *ab* sólo dan una idea
@@ -33,7 +34,7 @@ web y tecleamos el siguiente comando para comprobar que todo funciona correctame
 
 donde ***-n 1000*** hace que se solicite mil veces esta página y ***-c 5*** hace que se pidan concurrentemente de cinco en cinco.
 
-Una vez realizado esto, pasamos a realizar los benchmarks con `ab`. Para ello, se han creado dos pequeños [scripts](1.ab/scripts/) que lanzan los benchmarks contra la máquina servidora 1 (maquina1) y el balanceador de carga. Puesto que en la práctica anterior usamos dos programas diferentes para hacer el balanceo, en esta práctica comprobaremos el rendimiento de la granja web cuando el balanceador es nginx y también cuando es haproxy. De este modo, obtenemos los siguientes resultados:
+Una vez realizado esto, pasamos a realizar los benchmarks con `ab`. Para ello, se han creado dos pequeños [scripts](ab/scripts/) que lanzan los benchmarks contra la máquina servidora 1 (maquina1) y el balanceador de carga. Puesto que en la práctica anterior usamos dos programas diferentes para hacer el balanceo, en esta práctica comprobaremos el rendimiento de la granja web cuando el balanceador es nginx y también cuando es haproxy. De este modo, obtenemos los siguientes resultados:
 
 <table>
   <tr>
